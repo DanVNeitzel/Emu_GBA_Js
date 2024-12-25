@@ -1,5 +1,5 @@
 function GameBoyAdvanceVideo() {
-	this.renderPath = new GameBoyAdvanceSoftwareRenderer();
+	this.renderPath = new GameBoyAdvanceRenderProxy();
 
 	this.CYCLES_PER_PIXEL = 4;
 
@@ -42,44 +42,6 @@ GameBoyAdvanceVideo.prototype.clear = function() {
 	this.nextHblankIRQ = 0;
 	this.nextVblankIRQ = 0;
 	this.nextVcounterIRQ = 0;
-};
-
-GameBoyAdvanceVideo.prototype.freeze = function() {
-	return {
-		'inHblank': this.inHblank,
-		'inVblank': this.inVblank,
-		'vcounter': this.vcounter,
-		'vblankIRQ': this.vblankIRQ,
-		'hblankIRQ': this.hblankIRQ,
-		'vcounterIRQ': this.vcounterIRQ,
-		'vcountSetting': this.vcountSetting,
-		'vcount': this.vcount,
-		'lastHblank': this.lastHblank,
-		'nextHblank': this.nextHblank,
-		'nextEvent': this.nextEvent,
-		'nextHblankIRQ': this.nextHblankIRQ,
-		'nextVblankIRQ': this.nextVblankIRQ,
-		'nextVcounterIRQ': this.nextVcounterIRQ,
-		'renderPath': this.renderPath.freeze(this.core.encodeBase64)
-	};
-};
-
-GameBoyAdvanceVideo.prototype.defrost = function(frost) {
-	this.inHblank = frost.inHblank;
-	this.inVblank = frost.inVblank;
-	this.vcounter = frost.vcounter;
-	this.vblankIRQ = frost.vblankIRQ;
-	this.hblankIRQ = frost.hblankIRQ;
-	this.vcounterIRQ = frost.vcounterIRQ;
-	this.vcountSetting = frost.vcountSetting;
-	this.vcount = frost.vcount;
-	this.lastHblank = frost.lastHblank;
-	this.nextHblank = frost.nextHblank;
-	this.nextEvent = frost.nextEvent;
-	this.nextHblankIRQ = frost.nextHblankIRQ;
-	this.nextVblankIRQ = frost.nextVblankIRQ;
-	this.nextVcounterIRQ = frost.nextVcounterIRQ;
-	this.renderPath.defrost(frost.renderPath, this.core.decodeBase64);
 };
 
 GameBoyAdvanceVideo.prototype.setBacking = function(backing) {
