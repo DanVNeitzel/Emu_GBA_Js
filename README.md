@@ -1,76 +1,76 @@
 GBA.js
 ======
-**Version 1.1-git — Copyright © 2012 – 2013 Jeffrey Pfau**
+**Versão 1.1-git — Copyright © 2012 – 2013 Jeffrey Pfau**
 
-GBA.js is a Game Boy Advance emulator written from scratch to employ HTML5 technologies like Canvas and Web Audio. It uses no plugins, and is designed to run on cutting edge web browsers. It is hosted [on GitHub](https://github.com/endrift/gbajs) and is made available under the 2-clause BSD license. The most recent version can be found at [http://endrift.github.io/gbajs/](http://endrift.github.io/gbajs/).
+GBA.js é um emulador de Game Boy Advance escrito do zero para empregar tecnologias HTML5 como Canvas e Web Audio. Ele não usa plugins e foi projetado para rodar em navegadores de última geração. Ele é hospedado [no GitHub](https://github.com/endrift/gbajs) e é disponibilizado sob a licença BSD de 2 cláusulas. A versão mais recente pode ser encontrada em [http://endrift.github.io/gbajs/](http://endrift.github.io/gbajs/).
 
-## Browser Compatibility
-The current version of GBA.js is known to work in the following web browsers:
+## Compatibilidade do navegador
+A versão atual do GBA.js funciona nos seguintes navegadores da web:
 
-* Safari 6.0 or newer
-* Chrome 22 or newer
-* Firefox 25 or newer (slow)
+* Safari 6.0 ou mais recente
+* Chrome 22 ou mais recente
+* Firefox 25 ou mais recente (lento)
 
-The following web browsers also work, but will have degraded feature sets:
+Os seguintes navegadores da web também funcionam, mas terão conjuntos de recursos degradados:
 
-* Firefox 15 or newer (no sound, slow)
-* Opera 12.1x or newer (no sound, slow)
-* Internet Explorer 10 or newer (no sound, slow, pixelated display does not work)
-* Chrome 20, 21 (pixelated display does not work)
+* Firefox 15 ou mais recente (sem som, lento)
+* Opera 12.1x ou mais recente (sem som, lento)
+* Internet Explorer 10 ou mais recente (sem som, lento, exibição pixelada não funciona)
+* Chrome 20, 21 (exibição pixelada não funciona)
 
-The following browsers will not work:
+Os seguintes navegadores não funcionarão:
 
-* Safari 5.1.x or older (no File API for uploading games into JavaScript)
-* Firefox 14 or older (no DataView, used for memory)
-* Internet Explorer 9 or older
+* Safari 5.1.x ou mais antigo (sem API de arquivo para carregar jogos em JavaScript)
+* Firefox 14 ou mais antigo (sem DataView, usado para memória)
+* Internet Explorer 9 ou mais antigo
 
-All other browsers are untested.
+Todos os outros navegadores não foram testados.
 
-## Game Compatibility
-Please see the [compatibility list on the GitHub wiki](https://github.com/endrift/gbajs/wiki/Compatibility-List) for a list of tested games. Note that GBA.js is tuned for commercial games, and is currently lacking good support for homebrew games.
+## Compatibilidade de jogos
+Consulte a [lista de compatibilidade no wiki do GitHub](https://github.com/endrift/gbajs/wiki/Compatibility-List) para obter uma lista de jogos testados. Observe que o GBA.js é ajustado para jogos comerciais e atualmente não tem um bom suporte para jogos homebrew.
 
-## Feature List
-Currently, every part of the Game Boy Advance hardware, save for some lesser used features and the link cable are implemented.
+## Lista de recursos
+Atualmente, todas as partes do hardware do Game Boy Advance, exceto alguns recursos menos usados ​​e o cabo de link, estão implementados.
 
-The emulator also has these features:
+O emulador também tem estes recursos:
 
-* Downloadable and uploadable savegames
-* Screenshots
-* Pausing the emulation
-* Support for gamepaks that contain a realtime clock (e.g. Pokemon Ruby and Sapphire)
+* Savegames para download e upload
+* Capturas de tela
+* Pausar a emulação
+* Suporte para gamepaks que contêm um relógio em tempo real (por exemplo, Pokemon Ruby e Sapphire)
 
-Features that may be implemented in the future include:
+Recursos que podem ser implementados no futuro incluem:
 
 * Savestates
-* Remappable controls
-* Gamepad support
-* Link cable over Web Sockets
-* Cheat code support
-* Fullscreen support
-* Support for gamepaks that have other sensors (e.g. WarioWare Twisted!, Boktai)
+* Controles remapeáveis
+* Suporte para gamepad
+* Cabo de link sobre Web Sockets
+* Suporte para código de trapaça
+* Suporte para tela cheia
+* Suporte para gamepaks que têm outros sensores (por exemplo, WarioWare Twisted!, Boktai)
 
-## License
+## Licença
 Copyright © 2012 – 2013, Jeffrey Pfau
-All rights reserved.
+Todos os direitos reservados.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+Redistribuição e uso em formas de código-fonte e binário, com ou sem
+modificação, são permitidos desde que as seguintes condições sejam atendidas:
 
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
+* Redistribuições do código-fonte devem manter o aviso de direitos autorais acima, esta
+lista de condições e o seguinte aviso legal.
 
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
+* Redistribuições em formato binário devem reproduzir o aviso de direitos autorais acima,
+esta lista de condições e o seguinte aviso de isenção de responsabilidade na documentação
+e/ou outros materiais fornecidos com a distribuição.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.
+ESTE SOFTWARE É FORNECIDO PELOS TITULARES DE DIREITOS AUTORAIS E COLABORADORES "NO ESTADO EM QUE SE ENCONTRA"
+E QUAISQUER GARANTIAS EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO A,
+AS GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO
+SÃO REJEITADAS. EM NENHUMA HIPÓTESE O TITULAR DOS DIREITOS AUTORAIS OU COLABORADORES SERÃO
+RESPONSÁVEIS POR QUAISQUER DANOS DIRETOS, INDIRETOS, INCIDENTAIS, ESPECIAIS, EXEMPLARES OU
+CONSEQUENCIAIS (INCLUINDO, MAS NÃO SE LIMITANDO A, AQUISIÇÃO DE
+BENS OU SERVIÇOS SUBSTITUTOS; PERDA DE USO, DADOS OU LUCROS; OU INTERRUPÇÃO
+DE NEGÓCIOS) INDEPENDENTEMENTE DA CAUSA E EM QUALQUER TEORIA DE RESPONSABILIDADE, SEJA EM
+CONTRATO, RESPONSABILIDADE OBJETIVA OU ATO ILÍCITO (INCLUINDO NEGLIGÊNCIA OU OUTRO)
+DECORRENTES DE QUALQUER FORMA DO USO DESTE SOFTWARE, MESMO SE AVISADO DA
+POSSIBILIDADE DE TAIS DANOS.
